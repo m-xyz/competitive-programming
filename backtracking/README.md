@@ -1,6 +1,6 @@
 ## Backtracking
 
-Backtracking is a general algorithm for finding all(or some) solutions to some computational problems(notably Constraint satisfaction problems or CSPs), which incrementally builds candidates to the solution and abandons a candidate ('backtracks') as soon as it determines that the candidate cannot lead to a valid solution.
+Backtracking is a general algorithm for finding all(or some) solutions to some computational problems(notably Constraint satisfaction problems or CSPs), which incrementally builds candidates to the solution and abandons a candidate ('backtracks') as soon as it determines that the candidate cannot lead to a valid solution. Why? Say we are at candidate i, we iterate over children[i], and check if any are within the constraints defined for the problem, if they aren't there's no need to try and branching out that children, doing so allows us to prune the search zone.
 
 Similiar to how we would traverse a tree, starting at the root node we set out to find the solutions located at leaf nodes. Each intermediate node represents a partial candidate to the solution that COULD leads us to the final solution. At each candidate node we branch out to its children, once we determine that the current node isn't going to lead to the final solution, we backtrack to its parent to explore other possibilities. This leads to a much more efficient brute force algorithm.
 
