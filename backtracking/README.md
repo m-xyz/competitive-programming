@@ -14,6 +14,28 @@ NOTE: There's a common pattern in backtracking algorithms:</br>
         2.2 If it's not valid go to step 3.</br>
     3. Undo choice.</br>
 
+A general template for backtracking would be:
+
+```python
+    def backtrack(candidate):
+        if find_solution(candidate):
+            output(candidate)
+            return
+
+        // Iterate over all possible candidates
+        for next_candidate in possible_candidates:
+            if is_valid(next_candidate):
+
+                //Try this partial candidate's solution
+                place(next_candidate)
+
+                //Give this candidate, let's explore further down this path
+                backtrack(next_candidate)
+
+                //Backtrack
+                remove(next_candidate)
+```
+
 A classical applicattion of backtracking is the famous N_Queens problem, the problem description goes as follow:
 
     - Given an N x N chessboard, count the number of ways one can place N queens, such that no queens is attacking another queen.
