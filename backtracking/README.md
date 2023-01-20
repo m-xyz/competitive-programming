@@ -4,6 +4,9 @@ Backtracking is a general algorithm for finding all(or some) solutions to some c
 
 Similiar to how we would traverse a tree, starting at the root node we set out to find the solutions located at leaf nodes. Each intermediate node represents a partial candidate to the solution that COULD leads us to the final solution. At each candidate node we branch out to its children, once we determine that the current node isn't going to lead to the final solution, we backtrack to its parent to explore other possibilities. This leads to a much more efficient brute force algorithm.
 
+![](https://github.com/m-xyz/AOC_2022/blob/main/backtracking/backtracking.png)</br>
+
+
 NOTE: There's a common pattern in backtracking algorithms:</br>
     1. Make a choice</br>
     2. Check if choice is valid given the problem's constraints:</br>
