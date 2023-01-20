@@ -22,17 +22,17 @@ A general template for backtracking would be:
             output(candidate)
             return
 
-        // Iterate over all possible candidates
+        # Iterate over all possible candidates
         for next_candidate in possible_candidates:
             if is_valid(next_candidate):
 
-                //Try this partial candidate's solution
+                #Try this partial candidate's solution
                 place(next_candidate)
 
-                //Give this candidate, let's explore further down this path
+                #Give this candidate, let's explore further down this path
                 backtrack(next_candidate)
 
-                //Backtrack
+                #Backtrack
                 remove(next_candidate)
 ```
 
