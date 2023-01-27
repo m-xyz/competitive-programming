@@ -42,4 +42,6 @@ Given an N x N chessboard, count the number of ways one can place N queens, such
 
 Solving N_Queens using backtracking:
     1. Iterate over each row of the board, if we ever get to the final cell(board[N-1][N-1]) that means a solutions was found.</br>
-    2. Once we are at row Rx, we iterate over each column $C_y$
+    2. Once we are at row $R_x$, we iterate over each column $C_y$, we then consider placing a queen at board[$R_x$][$C_y$], in provided code
+    there's 3 lookup tabels, col, diag1 and diag2, meaning $Column_i$, $PositiveDiagonal_i$ and $NegativeDiagonal_i$, which store if there is currently
+    a queen placed at a given column and respective diagonals.
