@@ -38,4 +38,5 @@ A general template for backtracking would be:
 
 A classical application of backtracking is the famous N_Queens problem, the problem description goes as follow:
 
-    - Given an N x N chessboard, count the number of ways one can place N queens, such that no queens is attacking another queen.
+    Given an N x N chessboard, count the number of ways one can place N queens, such that no queens is attacking another queen.</br>
+
