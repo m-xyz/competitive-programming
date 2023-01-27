@@ -39,3 +39,7 @@ A general template for backtracking would be:
 A classical application of backtracking is the famous N_Queens problem, the problem description goes as follow</br>
 Given an N x N chessboard, count the number of ways one can place N queens, such that no queens is attacking another queen.</br>
 ![](https://github.com/m-xyz/AOC_2022/blob/main/backtracking/n_queen_constraints.png)</br>
+
+Solving N_Queens using backtracking:
+    1. Iterate over each row of the board, if we ever get to the final cell(board[N-1][N-1]) that means a solutions was found.</br>
+    2. Once we are at row Rx, we iterate over each column $C_y$
