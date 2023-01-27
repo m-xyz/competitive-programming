@@ -46,5 +46,5 @@ Solving N_Queens using backtracking:</br>
     there's 3 lookup tabels, col, diag1 and diag2, meaning $Column_i$, $PositiveDiagonal_i$ and $NegativeDiagonal_i$, which store if there is currently
     a queen placed at a given column and respective diagonals.</br>
     3. If the check passes, we place the queen(board[Rx][Cy] = 1).</br>
-    4. Give the nature of backtracking we also need a way of removing that queen so we can explore a different path(board[Rx][Cy] = 0).</br>
+    4. Given the nature of backtracking we also need a way of removing that queen so we can explore a different path(board[Rx][Cy] = 0).</br>
 
