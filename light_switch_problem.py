@@ -1,6 +1,5 @@
 #! /usr/bin/env python
 
-#led = [[0] * 10 for _ in range(10)]
 led = [False] * 100
 
 step = 1
