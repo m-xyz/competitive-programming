@@ -19,7 +19,6 @@ def bin_exp_it(k, b):
 
     return r
 
-print(bin_exp_it(2, 3))
 
 #t0 = datetime.now()
 #z = bin_exp(13332,58)
