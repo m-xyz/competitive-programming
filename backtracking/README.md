@@ -41,10 +41,10 @@ Given an N x N chessboard, count the number of ways one can place N queens, such
 ![](https://github.com/m-xyz/AOC_2022/blob/main/backtracking/n_queen_constraints.png)</br>
 
 Solving N_Queens using backtracking:</br>
-    1. Iterate over each row of the board, if we ever get to the final cell(board[N-1][N-1]) that means a solutions was found.</br>
-    2. Once we are at row $R_x$, we iterate over each column $C_y$, we then consider placing a queen at board[ $R_x$ ][ $C_y$ ], in the provided code
+    <b>1.</b> Iterate over each row of the board, if we ever get to the final cell(board[N-1][N-1]) that means a solutions was found.</br>
+    <b>2.</b> Once we are at row $R_x$, we iterate over each column $C_y$, we then consider placing a queen at board[ $R_x$ ][ $C_y$ ], in the provided code
     there's 3 lookup tabels, col, diag1 and diag2, meaning $Column_i$, $PositiveDiagonal_i$ and $NegativeDiagonal_i$, which store if there is currently
     a queen placed at a given column and respective diagonals.</br>
-    3. If the check passes, we place the queen(board[ $R_x$ ][ $C_y$ ] = 1).</br>
-    4. Given the nature of backtracking we also need a way of removing that queen so we can explore a different path later(board[ $R_x$ ][ $C_y$ ] = 0).</br>
+    <b>3.</b> If the check passes, we place the queen(board[ $R_x$ ][ $C_y$ ] = 1).</br>
+    <b>4.</b> Given the nature of backtracking we also need a way of removing that queen so we can explore a different path later(board[ $R_x$ ][ $C_y$ ] = 0).</br>
 
