@@ -45,6 +45,6 @@ Solving N_Queens using backtracking:</br>
     2. Once we are at row $R_x$, we iterate over each column $C_y$, we then consider placing a queen at board[ $R_x$ ][ $C_y$ ], in the provided code
     there's 3 lookup tabels, col, diag1 and diag2, meaning $Column_i$, $PositiveDiagonal_i$ and $NegativeDiagonal_i$, which store if there is currently
     a queen placed at a given column and respective diagonals.</br>
-    3. If the check passes, we place the queen(board[Rx][Cy] = 1).</br>
-    4. Given the nature of backtracking we also need a way of removing that queen so we can explore a different path later(board[Rx][Cy] = 0).</br>
+    3. If the check passes, we place the queen(board[ $R_x$ ][ $C_y$ ] = 1).</br>
+    4. Given the nature of backtracking we also need a way of removing that queen so we can explore a different path later(board[ $R_x$ ][ $C_y$ ] = 0).</br>
 
